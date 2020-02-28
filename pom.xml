@@ -11,10 +11,23 @@
 	</properties>
 	<url>http://www.mysticcloud.net</url>
 
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>bintray</name>
+			<url>http://jcenter.bintray.com</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.16</version>
+		</dependency>
+	</dependencies>
+
 	<build>
-
-
-
 		<finalName>SQLConsole</finalName>
 		<resources>
 			<resource>
@@ -51,11 +64,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-		<dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.16</version>
-        </dependency>
-	</dependencies>
 </project>
