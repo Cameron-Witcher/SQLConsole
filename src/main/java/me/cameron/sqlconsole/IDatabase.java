@@ -48,7 +48,7 @@ public class IDatabase {
 //		      info.put("password", "test");
 //			
 			if (driver.equals(SQLDriver.MYSQL)) {
-//				Class.forName("com.mysql.jdbc.Driver");
+				Class.forName("com.mysql.jdbc.Driver");
 				connection = DriverManager.getConnection(url, properties);
 			}
 			if (driver.equals(SQLDriver.SQLITE)) {
