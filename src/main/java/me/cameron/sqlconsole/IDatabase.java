@@ -26,7 +26,7 @@ public class IDatabase {
 	private SQLDriver driver;
 
 	public IDatabase(SQLDriver driver, String db) {
-		this.url = "jdbc:sqlite:C:/sqlite/db/" + db;
+		this.url = "jdbc:sqlite:/sqlite/db/" + db;
 		this.driver = driver;
 	}
 
