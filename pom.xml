@@ -10,7 +10,20 @@
 		<rootdir>/</rootdir>
 	</properties>
 	<url>http://www.mysticcloud.net</url>
+
+	<dependencies>
+		<!--This adds the Spigot API artifact to the build -->
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.36</version>
+		</dependency>
+	</dependencies>
 	<build>
+
+
+
 		<finalName>SQLConsole</finalName>
 		<resources>
 			<resource>
@@ -23,10 +36,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
-					<source>8</source>
+					<source>1.8</source>
 					<target>1.8</target>
-					<Source>1.8</Source>
-					<Target>1.8</Target>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
