@@ -39,7 +39,7 @@ public class Main {
 				System.out.println("What database would you like to use?");
 				String db = reader.readLine();
 				if (driver.equals(SQLDriver.MYSQL)) {
-					database = new IDatabase(driver, "144.217.12.232", "Minecraft", 3306, "root", "v4pob8LW");
+					database = new IDatabase(driver, "157.245.121.66", "Minecraft", 3306, "root", "v4pob8LW");
 				}
 				if (driver.equals(SQLDriver.SQLITE)) {
 					database = new IDatabase(driver, db);
